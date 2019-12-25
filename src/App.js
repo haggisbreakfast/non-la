@@ -1,14 +1,14 @@
 import React from "react";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
+import { GlobalStyle, Header } from "./Components";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <span>NON LA</span>
-      </header>
+      <GlobalStyle />
+      <Header></Header>
+      <span>NON LA</span>
     </div>
   );
 }
