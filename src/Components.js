@@ -23,11 +23,10 @@ export const GlobalStyle = createGlobalStyle`
 export const Header = styled.header`
   background: url(${banner}) no-repeat center;
   background-size: cover;
-
   position: fixed;
   top: 0;
   left: 0;
-  height: 25vh;
+  height: 220px;
   margin-bottom: 10px;
   z-index: 1;
   width: 100%;
@@ -36,7 +35,7 @@ export const Header = styled.header`
 export const PageContainer = styled.div`
   @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
   background: url(${background}) no-repeat;
-  background-position: right 150px;
+  background-position: right -220px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

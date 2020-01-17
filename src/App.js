@@ -11,13 +11,8 @@ function App() {
       <PageContainer>
         <About>
           <p>
-            blablablablablablablablabla blablablablablablablablabla
-            blablablablablablablablablavblablablablablablablablablav
-            vvblablablablablablablablablablablablablablablablablablab
-            lablablablablablablablablablablablablablablablablablablab
-            lablablablablablablablablablablablablablablablablablablab
-            lablablablablablablablablablablablablablablablablablablab
-            lablablablablabla
+            Non La is homo rock 'n roll for the queers and also non-queers.
+            Debut album Not in Love on Kingfisher Bluez and Lost Sound Tapes.
           </p>
         </About>
         <Image></Image>
