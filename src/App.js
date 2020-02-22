@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <Header></Header>
+      <Header>NON LA</Header>
       <PageContainer>
         <About>
           <p>
