@@ -1,17 +1,17 @@
 // import React from "react";
 import styled, { createGlobalStyle } from "styled-components";
-// import banner from "./banner.png";
+import banner from "./banner-transparent.png";
 import background from "./nonla.jpg";
 
 export const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Roboto Mono', monospace;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: grey;
     margin: auto;
     height: 100vh;
-    @media(max-width: 800px){
+    @media(max-width: 650px){
       font-size: 18px;
     }
   }
@@ -25,7 +25,7 @@ export const Header = styled.header`
   position: fixed;
   top: 0;
   left: 0;
-  height: 20vw;
+  height: 18vw;
   margin-bottom: 10px;
   z-index: 1;
   width: 100%;
@@ -61,6 +61,21 @@ export const Header = styled.header`
       66.666%   {background: #B5EAD7;}
       100% {background: #C7CEEA;}
     }
+&:before {
+  content: '';
+  background: url(${banner}) no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 360px;
+  height: 140px;
+  margin-top: 20px;
+  @media(max-width: 650px){
+
+  width: 200px;
+  height: 100px;
+  }
+
+}
 `;
 
 export const PageContainer = styled.div`
@@ -70,13 +85,14 @@ export const PageContainer = styled.div`
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: 25% 25%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   height: 1300px;
   overflow: hidden;
   padding: 0 60px;
-  @media(max-width: 800px){
+  @media(max-width: 650px){
       align-items: flex-start;
     }
 
@@ -85,7 +101,7 @@ export const PageContainer = styled.div`
 
 export const About = styled.div`
   color: white;
-  max-width: 33%;
+  max-width: 30%;
   overflow-wrap: break-word;
   text-align: left;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -93,10 +109,13 @@ export const About = styled.div`
   -ms-animation: fadein 2s; /* Internet Explorer */
   -o-animation: fadein 2s; /* Opera < 12.1 */
   animation: fadein 2s;
-  @media(max-width: 800px){
-  max-width: 100%;
+  padding-bottom: 30%;
+  padding-right: 10%;
+  @media(max-width: 650px){
   align-items: flex-start;
-  padding-top: 40%;
+  padding-top: 30%;
+  max-width: 100%;
+  padding-bottom: 0;
 
   }
 
@@ -148,5 +167,25 @@ export const About = styled.div`
       opacity: 1;
     }
   }
+`;
+
+export const SocialContainer = styled.div`
+display: flex;
+padding-top: 20px;
+
+a {
+  padding-right: 10px;
+  font-size: 24px;
+
+}
+`;
+
+
+export const Link = styled.a`
+color: white;
+text-decoration: none;
+&:hover {
+  color: #B5EAD7;
+}
 `;
 export const Image = styled.div``;
