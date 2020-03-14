@@ -179,9 +179,10 @@ padding-top: 20px;
 
 a {
   padding-right: 10px;
-  font-size: 24px;
+  font-size: 20px;
   @media (max-width: 650px) {
-    font-size: 18px;
+    font-size: 16px;
+    padding-right: 5px;
   }
 
 }
