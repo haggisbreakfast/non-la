@@ -25,7 +25,7 @@ export const Header = styled.header`
   position: fixed;
   top: 0;
   left: 0;
-  height: 18vw;
+  height: 14vw;
   margin-bottom: 10px;
   z-index: 1;
   width: 100%;
@@ -42,6 +42,10 @@ export const Header = styled.header`
   -webkit-animation: colorchange 10s;
   -webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
+  @media(max-width: 650px) {
+    height: 18vw;
+
+  }
       @keyframes colorchange
     {
       0%   {background: #FF9AA2;}
