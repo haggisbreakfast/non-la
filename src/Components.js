@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Roboto Mono', monospace;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: lighter;
     color: grey;
     margin: auto;
     height: 100vh;
@@ -175,7 +175,6 @@ export const About = styled.div`
 
 export const SocialContainer = styled.div`
 display: flex;
-padding-top: 20px;
 
 a {
   padding-right: 10px;
