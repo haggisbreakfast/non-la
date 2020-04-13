@@ -1,7 +1,7 @@
 // import React from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import banner from "./banner-transparent.png";
-import background from "./nonla.jpg";
+import background from "./nonla-min.jpg";
 
 export const GlobalStyle = createGlobalStyle`
   body {
