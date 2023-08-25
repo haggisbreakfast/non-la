@@ -15,7 +15,6 @@ function App() {
       <PageContainer>
         <About>
           <p>
-            Non La is homo rock 'n roll for the queers and also non-queers.
             Debut album Not in Love on <Link href="https://nonla.bandcamp.com/album/not-in-love">Kingfisher Bluez</Link> and <Link href="https://lostsoundtapes.com/collections/lost-sound-tapes-releases/products/non-la-not-in-love-cassette-tape">Lost Sound Tapes</Link>.
             </p>
             <SocialContainer>
