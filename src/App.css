@@ -35,3 +35,42 @@
     transform: rotate(360deg);
   }
 }
+
+iframe {
+  aspect-ratio: 16/9;
+  border-radius: .5rem;
+  width: 90%;
+}
+
+.mint-link {
+  color: #D3FFE9;
+  &:hover {
+    color: #83B3D7;
+    font-weight: 600;
+
+  }
+}
+
+h2 {
+  margin: 0;
+  /* font-weight: normal; */
+  color: #83B3D7;
+  
+  /* font-size: 4rem; */
+}
+
+.press-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
+  a {
+    width: 30%;
+    @media (max-width: 650px) {
+      width: 100%
+    }
+  }
+}

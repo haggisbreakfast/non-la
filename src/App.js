@@ -1,22 +1,29 @@
 import React from "react";
-// import logo from "./logo.svg";
 import "./App.css";
-import { GlobalStyle, Header, About, PageContainer, Link, Image, SocialContainer } from "./Components";
+import { GlobalStyle, Header, About, PageContainer, Link, Image, SocialContainer, Portrait, Bio, VideoSection, PressSection, PressLogo } from "./Components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram, faSpotify, faBandcamp } from '@fortawesome/free-brands-svg-icons';
+import exclaim from "./exclaim.png";
+import xtra from "./xtra.png";
+import treble from "./treble.png";
 
 
 function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <Header></Header>
       <PageContainer>
-        <About>
-          <p>
-            Debut album Not in Love on <Link href="https://nonla.bandcamp.com/album/not-in-love">Kingfisher Bluez</Link> and <Link href="https://lostsoundtapes.com/collections/lost-sound-tapes-releases/products/non-la-not-in-love-cassette-tape">Lost Sound Tapes</Link>.
-            </p>
+      <Header>
+      </Header>
+
+      <About>
+      <Portrait>
+       </Portrait>
+
+
+      <Bio>
+      <p>New record out on <a class="mint-link" href="https://mintrecs.com/">mint records</a> March 29.</p>
             <SocialContainer>
               <Link href="mailto:nonlaband@gmail.com" target="blank"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon></Link>
               <Link href="https://www.facebook.com/nonlaband/" target="blank"><FontAwesomeIcon icon={faFacebook} /></Link>
@@ -24,11 +31,29 @@ function App() {
               <Link href="https://open.spotify.com/album/5vFw06omAAEVLo7JTobZcp?si=nktnYZFZSEOk4zmbSkwlrQ" target="blank"><FontAwesomeIcon icon={faSpotify} /></Link>
               <Link href="https://nonla.bandcamp.com/album/not-in-love" target="blank"><FontAwesomeIcon icon={faBandcamp} /></Link>
             </SocialContainer>
+        </Bio>
+
+
 
         </About>
-        <Image></Image>
       </PageContainer>
-    </div >
+        <VideoSection>
+        <iframe 
+        src='https://www.youtube.com/embed/HPWt95KBzL0?si=NGec3WantLauLxFb'
+        frameborder='0'
+        allow='autoplay; encrypted-media'
+        allowfullscreen
+        title='video'
+/>
+        </VideoSection>
+      < PressSection>
+      <div class="press-links">
+        <a href="https://www.treblezine.com/watch-a-rousing-game-of-dodgeball-in-non-las-video-for-take-care/"><PressLogo $pressLogo={treble} /></a>
+        <a href="https://xtramagazine.com/culture/music/non-la-vancouver-262929"><PressLogo $pressLogo={xtra} /></a>
+        <a href="https://exclaim.ca/music/article/non-la-details-sophomore-album-like-before"><PressLogo $pressLogo={exclaim} /></a>
+      </div>
+      </PressSection>
+    </div>
   );
 }
 
