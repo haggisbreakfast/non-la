@@ -105,7 +105,7 @@ flex-direction: column;
 
 @media(max-width: 650px){
 width: 100%;
-padding: 1rem;
+padding: 4rem 2rem;
 height: 30vh;
 
 }
@@ -152,6 +152,9 @@ background-image: url(${props => props.$pressLogo});
 background-size: contain;
 background-repeat: no-repeat;
 background-position: center;
+@media (max-width: 650px) {
+  max-width: 200px;
+}
 
 `;
 
@@ -161,7 +164,7 @@ padding: 8rem;
 background-size: 100%;
 background-position: 50%;
 @media (max-width: 650px) {
-  padding: 1rem;
+  padding: 6rem 1rem;
 }
 `;
 

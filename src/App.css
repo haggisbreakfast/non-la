@@ -53,10 +53,7 @@ iframe {
 
 h2 {
   margin: 0;
-  /* font-weight: normal; */
   color: #83B3D7;
-  
-  /* font-size: 4rem; */
 }
 
 .press-links {
@@ -69,8 +66,9 @@ h2 {
   }
   a {
     width: 30%;
+    text-align: center;
     @media (max-width: 650px) {
-      width: 100%
+      width: 60%
     }
   }
 }
