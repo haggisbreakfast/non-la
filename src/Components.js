@@ -115,12 +115,12 @@ export const SocialContainer = styled.div`
 display: flex;
 
 a {
-  padding-right: 10px;
+  padding-right: 1rem;
   font-size: 1.5rem;
   
   @media (max-width: 650px) {
-    font-size: 16px;
-    padding-right: 5px;
+    font-size: 2rem;
+    padding-right: 1.5rem;
   }
 
 }
@@ -154,6 +154,10 @@ background-repeat: no-repeat;
 background-position: center;
 @media (max-width: 650px) {
   max-width: 200px;
+}
+&:hover {
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
 }
 
 `;
