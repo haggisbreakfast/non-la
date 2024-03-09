@@ -48,9 +48,9 @@ function App() {
         </VideoSection>
       < PressSection>
       <div class="press-links">
-        <a href="https://www.treblezine.com/watch-a-rousing-game-of-dodgeball-in-non-las-video-for-take-care/"><PressLogo $pressLogo={treble} /></a>
-        <a href="https://xtramagazine.com/culture/music/non-la-vancouver-262929"><PressLogo $pressLogo={xtra} /></a>
-        <a href="https://exclaim.ca/music/article/non-la-details-sophomore-album-like-before"><PressLogo $pressLogo={exclaim} /></a>
+        <a href="https://www.treblezine.com/watch-a-rousing-game-of-dodgeball-in-non-las-video-for-take-care/" aria-label="Link to an article on the music video for 'Take Care' published by Treblezine"><PressLogo $pressLogo={treble} /></a>
+        <a href="https://xtramagazine.com/culture/music/non-la-vancouver-262929" aria-label="Link to an interview with Non La published by Xtra Magazine"><PressLogo $pressLogo={xtra} /></a>
+        <a href="https://exclaim.ca/music/article/non-la-details-sophomore-album-like-before" aria-label="Link to the article 'Non La Details Sophomore Album Like Before' published by exclaim"><PressLogo $pressLogo={exclaim} /></a>
       </div>
       </PressSection>
     </div>
